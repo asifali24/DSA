@@ -65,3 +65,21 @@ var maxProfit = function(p) {
     return pro
 };
 
+
+// 283. Move Zeroes
+
+var moveZeroes = function(n) {
+    let p1=0
+    for(let i=0;i <n.length; i++){
+        if(n[i] !==0){
+            n[p1]=n[i]
+            p1++
+        }
+    }
+
+    for(let i=p1; i<n.length;i++){
+        n[i]=0
+    }
+};
+
+
