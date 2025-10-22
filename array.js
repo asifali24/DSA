@@ -113,3 +113,10 @@ var missingNumber = function(nums) {
 };
 
 
+
+// 136. Single Number
+// 88. Merge Sorted Array
+
+
+
+
