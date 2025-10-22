@@ -83,3 +83,33 @@ var moveZeroes = function(n) {
 };
 
 
+// 485. Max Consecutive Ones
+
+var findMaxConsecutiveOnes = function(n) {
+    maxC = 0
+    cc = 0
+    for(let i=0 ;i< n.length; i++){
+        if(n[i] ===1){
+            cc++
+        }else{
+            maxC = cc > maxC ? cc: maxC
+            cc=0
+        }
+    }
+    return cc > maxC ? cc: maxC
+    
+};
+
+
+
+// 268. Missing Number
+
+var missingNumber = function(nums) {
+    let n =nums.length
+    let t= (n *(n+1))/2
+    let ct = 0
+    nums.forEach((e)=> ct+=e)
+    return t-ct
+};
+
+
