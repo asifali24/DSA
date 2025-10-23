@@ -29,3 +29,12 @@ const sumOfOddNo = (a) => {
 }
 
 console.log("====", sumOfOddNo(ar))
+
+
+//factorial 
+
+const factorial =(n) => {
+    if (n == 1) return n
+    return n * factorial(n-1)
+}
+console.log("🚀 ~ factorial ~ factorial:", factorial(6))
