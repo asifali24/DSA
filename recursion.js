@@ -16,4 +16,16 @@ const arraySum = (a) => {
     return a.pop() + arraySum(a)
 }
 
-console.log("====",arraySum(arr))
+console.log("====", arraySum(arr))
+
+// sum of all the odd no in array
+let ar = [2, 4, 5, 7, 8, 1]
+
+
+const sumOfOddNo = (a) => {
+    if (!a.length) return 0
+    let currentNo = a.pop()
+    return (currentNo % 2 == 0 ? 0 : currentNo )+ sumOfOddNo(a)
+}
+
+console.log("====", sumOfOddNo(ar))
