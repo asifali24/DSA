@@ -38,3 +38,14 @@ const factorial =(n) => {
     return n * factorial(n-1)
 }
 console.log("🚀 ~ factorial ~ factorial:", factorial(6))
+
+
+//power of 2
+// 231. Power of Two
+
+
+var isPowerOfTwo = function(n) {
+    if(n ===1) return true
+    if(n <1) return false
+    return isPowerOfTwo(n/2)  
+};
